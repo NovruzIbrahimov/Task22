@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+input, button {
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+div[id="open"], div[id="inProgress"], div[id="completed"] {
+    width: 250px;
+    min-height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: white;
+    float: left;  /* Or use flexbox or grid */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div[id="open"] div, div[id="inProgress"] div, div[id="completed"] div {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+div[id="open"] div:hover, div[id="inProgress"] div:hover, div[id="completed"] div:hover {
+    background-color: #ced4da;
+}
+
+
+div {
+    width: 150px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid black;
+}
